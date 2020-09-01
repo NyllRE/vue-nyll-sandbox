@@ -1,0 +1,46 @@
+body {
+    text-align: center;
+    justify-content: center;
+}
+button {
+    background:white;
+    border: 30px aqua;
+    border-radius: 15px;
+}
+#rem_li {
+    color: transparent;
+    transition: ease-in 0.1s;
+}
+#rem_li:hover {
+    color: black;
+}
+ul {
+    list-style: none;
+}
+li {
+    transition: ease-in 0.1s;
+}
+li:hover {
+    font-size: 1.05em;
+}
+#wantToAdd {
+    margin-top: 1em;
+    margin-left: -2em;
+    color: gray;
+    font-size: 0.9em;
+    transition: ease-in 0.3s;
+    
+}
+.imgcon {
+    background: url();
+    background-position: center center;
+    height: 140px;
+    transition: 0.23s;
+}
+.imgcon {
+    width: 100vw;
+    display: flex;
+}
+button {
+    height: 20px;
+}

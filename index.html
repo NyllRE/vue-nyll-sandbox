@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>vue project</title>
+  </head>
+  <body>
+    <div id="app">
+      <input type="text" v-model="message" />
+      <br />
+      <button v-on:click="reverseMessage">Reverse</button>/
+      <button v-on:click="addToList">add to list</button>
+      <ul>
+        <li v-for="todo in todos">
+          {{ todo.text }}
+          <button id="rem_li" v-on:click="removeFromList(todo)">x</button>
+        </li>
+        <li id="wantToAdd" :style="{ 'font-size': fontSize}">Add: {{message}}</li>
+      </ul>
+      <div class="imgcon">
+        <img
+          :src="cat"
+          v-show="message.indexOf('nigga') > -1"
+          alt=""
+          @mouseover="play()"
+          :style="img"
+        />
+        <img 
+          :src="Nice" 
+          v-show="message.indexOf('masturbate') 
+        > -1" alt="" />
+        <img
+          :src="free"
+          v-show="message.indexOf('aggin') > -1"
+          alt=""
+          srcset=""
+        />
+        <button class="teext"  @click="cart -= 1" style="height: 1em" :disabled="cart <= -5">
+          add
+        </button>
+        <div >{{cart}}</div>
+        <div class="space" v-show="showallow">{{free}}</div>
+      </div>
+    </div>
+
+    <script defer src="script.js"></script>
+  </body>
+</html>
