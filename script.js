@@ -1,5 +1,5 @@
 const audioB = new Audio("Bruh.mp3");
-var app = new Vue({
+const app = new Vue({
   el: "#app",
   data: {
     Nice: "nice.jpg",
